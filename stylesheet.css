@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Syne-Bold';
+    src: url('fonts/Syne-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Syne-ExtraBold';
+    src: url('fonts/Syne-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Syne-Medium';
+    src: url('fonts/Syne-Medium.ttf');
+}
+@font-face {
+    font-family: 'Syne-Regular';
+    src: url('fonts/Syne-Regular.ttf');
+}
+
+section.container {
+    border: 1px solid black;
+    min-height: 1893px;
+    width: 100%;
+    background-color: #111827;
+
+    nav {
+        border: 1px black solid;
+        min-height: 105px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            color: white;
+            font-family: 'syne-Bold', serif;
+            font-size: 36px;
+            padding: 30px;
+
+            &.current-page {
+                background-color: white;
+                color: black;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
+        }
+    }
+
+    section.hero {
+        background: url('images/lanes-cropped.png') top left;
+        background-size: cover;
+        min-height: 823px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h1 {
+            color: white;
+            font-family: Syne-Medium, sans-serif;
+            font-size: 64px;
+            display: flex;
+            justify-content: center;
+        }
+        div.film-details {
+            h2 {
+                color: white;
+                text-align: left;
+                text-indent: 20px;
+                font-family: syne-bold, sans-serif;
+                font-size: 48px;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                color: #F5F5F5;
+                text-align: left;
+                text-indent: 20px;
+                font-family: syne-bold, sans-serif;
+                font-size: 32px;
+                font-style: normal;
+                text-transform: uppercase;
+            }
+            p {
+                color: #F7F7F4;
+                text-align: left;
+                text-indent: 20px;
+                font-family: syne-regular, sans-serif;
+                font-size: 20px;
+                font-style: normal;
+            }
+        }
+
+    }
+}
