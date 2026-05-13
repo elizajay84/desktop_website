@@ -18,75 +18,101 @@
 
 section.container {
     border: 1px solid black;
-    min-height: 1893px;
-    width: 100%;
+    width: 780px;
+    margin: 0 auto;
     background-color: #111827;
 
     nav {
         border: 1px black solid;
-        min-height: 105px;
+        min-height: 55px;
         width: 100%;
         display: flex;
         justify-content: space-around;
+        align-items: center;
 
         a {
             color: white;
             font-family: 'syne-Bold', serif;
-            font-size: 36px;
-            padding: 30px;
+            font-size: 20px;
+            padding: 10px;
 
             &.current-page {
                 background-color: white;
                 color: black;
                 font-weight: bold;
                 text-decoration: underline;
+                padding: 10px 20px;
             }
 
         }
     }
 
     section.hero {
-        background: url('images/lanes-cropped.png') top left;
-        background-size: cover;
-        min-height: 823px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+
+        img {
+            width: 100%;
+            display: block;
+        }
         h1 {
             color: white;
             font-family: Syne-Medium, sans-serif;
-            font-size: 64px;
+            font-size: 36px;
             display: flex;
             justify-content: center;
         }
-        div.film-details {
-            h2 {
-                color: white;
-                text-align: left;
-                text-indent: 20px;
-                font-family: syne-bold, sans-serif;
-                font-size: 48px;
-                text-transform: uppercase;
-            }
 
-            h3 {
-                color: #F5F5F5;
-                text-align: left;
-                text-indent: 20px;
-                font-family: syne-bold, sans-serif;
-                font-size: 32px;
-                font-style: normal;
-                text-transform: uppercase;
-            }
-            p {
-                color: #F7F7F4;
-                text-align: left;
-                text-indent: 20px;
-                font-family: syne-regular, sans-serif;
-                font-size: 20px;
-                font-style: normal;
-            }
+    }
+    div.film-details {
+        padding: 16px;
+        h2 {
+            color: white;
+            text-align: left;
+            text-indent: 10px;
+            font-family: Syne-Bold, sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
         }
 
+        h3 {
+            color: #F5F5F5;
+            text-align: left;
+            text-indent: 10px;
+            font-family: Syne-Medium, sans-serif, sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            text-transform: uppercase;
+        }
+        p {
+            color: #F7F7F4;
+            text-align: left;
+            text-indent: 10px;
+            font-family: syne-regular, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+        }
+    }
+
+    h3 {
+        color: white;
+        text-align: center;
+        font-family: Syne-Bold, sans-serif;
+        font-size: 24px;
+    }
+    section.gallery-selection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    div.gallery-item {
+        margin: 5px;
+        border: 1px solid black;
+        width: 240px;
+    }
+    div.gallery-item img {
+        width: 100%;
+        display: block;
     }
 }
