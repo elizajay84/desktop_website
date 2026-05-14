@@ -213,3 +213,73 @@ section.container {
     font-family: Syne-Medium, sans-serif;
     color: #e5e7eb;
 }
+
+.form-page .form-container {
+    max-width: 640px;
+    margin: 60px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.form-page .form-container h1 {
+    color: #e5e7eb;
+    font-family: Syne-ExtraBold, sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.form-page .form-subtitle {
+    color: #e5e7eb;
+    font-family: Syne-Medium, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-indent: 0;
+}
+
+.form-page .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.form-page .form-group label {
+    color: #e5e7eb;
+    font-family: Syne-Medium, sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.form-page .form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #e5e7eb;
+    border: none;
+    box-sizing: border-box;
+}
+
+.form-page .required {
+    color: #E63A2E;
+}
+
+.form-page form button {
+    display: block;
+    margin: 0 auto;
+    background-color: #e5e7eb;
+    color: black;
+    font-family: Syne-Medium, sans-serif;
+    font-size: 18px;
+    padding: 14px 40px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-page form button:hover {
+    background-color: #E63A2E;
+    color: white;
+    border-color: #E63A2E;
+}
